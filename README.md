@@ -5,9 +5,10 @@ A simple jQuery plugin for adding a [Dojour](https://dojour.us) event feed to yo
 ### Step 1 - Include jQuery
 You may already have this included, but if add this to the <head> of your html:
 
-'''html
+'''
 <script type="text/javascript" src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
 '''
+
 Or find the most up-to-date version [here](https://code.jquery.com/jquery/)
 
 ### Step 2 - Include Dojour Javascript and CSS files
