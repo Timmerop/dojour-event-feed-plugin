@@ -13,26 +13,29 @@ Or find the most up-to-date version [here](https://code.jquery.com/jquery/)
 
 ### Step 2 - Include Dojour Javascript and CSS files
 Also add this to the <head> of your html underneath the jQuery snippet.
-'''html
+
+```html
 <script type="text/javascript" src='https://dojour.us/assets/js/dojour.min.js'></script>
 <link rel="stylesheet" href="https://dojour.us/assets/css/dojour-plugin.css">
-'''
+```
+
 DO NOT download this file. Keep the source url pointing to dojour.us. This will make sure we can make changes for you as our api evolves.
 
 ### Step 3 - Customizing the plugin
 Create a div with the id ‘dojour-feed’ and add the following line to a javascript file or in a script tag.
 At minimum, provide the username for dojour event feed you want to display.
 
-'''html
+```html
 <div id='dojour-feed'></div>
 $('#dojour-feed').dojour({
 	username:'yourUserName'
 });
-'''
+```
+
 This will call the Dojour API and return any upcoming events you’ve added, starred, or reposted.
 
 Here’s a simple example of all these step together:
-'''html
+```html
 <html>
 	<head>
 		<script type="text/javascript" src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
@@ -50,11 +53,11 @@ Here’s a simple example of all these step together:
 		</script>
 	</body>
 </html>
-'''
+```
 
 The <body> will be converted into something like this:
 
-'''html
+```html
 <div id='dojour-feed'>
 	<div class='dojour-event-list'>
 		...template with Event 1...
@@ -64,13 +67,14 @@ The <body> will be converted into something like this:
 	</div>
 	<button id="dojour-more">More</button>
 </div>
-'''
+```
 
 ## Customization
 
 ### Templating
 You can override the plugin's default template by creating your own like so:
-'''html
+
+```html
 <script id="event-list-template" type="text/template">
 	<div>
 		<h1>
@@ -90,9 +94,10 @@ You can override the plugin's default template by creating your own like so:
           template: jQuery('#event-list-template').html()
       });
 </script>
-'''
+```
+
 Here is a complete list of variables you can use in your templates.
-Variable      | Description  
+Variable | Description  
 --- |---
 {{title}} | The title of the event
 {{photo}} | The url to the event image
@@ -143,11 +148,11 @@ interpolate_end | ‘}}' | The closing syntax for templating variables.
 
 ### Callback Function
 If you need to fire more javascript after the feed has been built, add a callback function like so.
-'''javascript
+```javascript
 $('#dojour-feed').dojour({
 	username:'yourUserName'
 }, function(){
 	//put your logic here
 alert('Finished!');
 });
-'''
+```
