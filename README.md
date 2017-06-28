@@ -97,6 +97,7 @@ You can override the plugin's default template by creating your own like so:
 ```
 
 Here is a complete list of variables you can use in your templates.
+
 Variable | Description  
 --- |---
 {{title}} | The title of the event
