@@ -27,9 +27,11 @@ At minimum, provide the username for dojour event feed you want to display.
 
 ```html
 <div id='dojour-feed'></div>
-$('#dojour-feed').dojour({
-	username:'yourUserName'
-});
+<script>
+	$('#dojour-feed').dojour({
+		username:'yourUserName'
+	});
+</script>
 ```
 
 This will call the Dojour API and return any upcoming events you’ve added, starred, or reposted.
@@ -97,7 +99,6 @@ You can override the plugin's default template by creating your own like so:
 ```
 
 Here is a complete list of variables you can use in your templates.
-
 Variable | Description  
 --- |---
 {{title}} | The title of the event
