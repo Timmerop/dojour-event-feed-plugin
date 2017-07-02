@@ -99,6 +99,7 @@ You can override the plugin's default template by creating your own like so:
 ```
 
 Here is a complete list of variables you can use in your templates.
+
 Variable | Description  
 --- |---
 {{title}} | The title of the event
@@ -113,8 +114,8 @@ Variable | Description
 {{location_title}} | The name of the event’s location
 {{location_address}} | the full address of the location
 {{start_time}} | The next showings start time (ex 10:00pm)
-{{end_time}} | The next showings end time, if exists (ex 10:00pm)
-{{door_time}} | The next showings door time, if exists (ex 10:00pm)
+{{end_time}} | The next showings end time, if exists (ex 2:00am)
+{{door_time}} | The next showings door time, if exists (ex 9:00pm)
 {{duration}} | The start, end, and door times as provided. If only the start time (10:00 PM), if end time provided (10:00 PM - 2:00 AM), if door time provided (10:00 PM - 2:00 AM, doors at 9:00 PM)
 {{call_to_action_url}} | Either a Dojour registration url,  external url, or False
 {{call_to_action_text}} | Either a Dojour user provided button text, or default button text
@@ -134,7 +135,7 @@ Variable | Description
 {{end_month_num}} | The month number (1-12)
 {{end_year}} | The year (ex 1999)
 {{end_year_abrv}} | The year abbreviated (ex 99)
-{{if ...}} | Use any of the keys above to conditionally add hide_class (see above). Use to add class or attributes to elements. EX: <button class=”{{if call_to_action_url}}”>{{call_to_action_text}}</button>
+{{if ...}} | Use any of the keys above to conditionally add hide_class (see above). Use to add class or attributes to elements. EX: ```<button class=”{{if call_to_action_url}}”>{{call_to_action_text}}</button>```
 
 
 ### Additional Settings
@@ -161,3 +162,5 @@ $('#dojour-feed').dojour({
 alert('Finished!');
 });
 ```
+
+
