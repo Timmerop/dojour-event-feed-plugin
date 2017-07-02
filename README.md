@@ -113,6 +113,8 @@ Variable | Description
 {{location_title}} | The name of the event’s location
 {{location_address}} | the full address of the location
 {{start_time}} | The next showings start time (ex 10:00pm)
+{{end_time}} | The next showings end time, if exists (ex 10:00pm)
+{{door_time}} | The next showings door time, if exists (ex 10:00pm)
 {{duration}} | The start, end, and door times as provided. If only the start time (10:00 PM), if end time provided (10:00 PM - 2:00 AM), if door time provided (10:00 PM - 2:00 AM, doors at 9:00 PM)
 {{call_to_action_url}} | Either a Dojour registration url,  external url, or False
 {{call_to_action_text}} | Either a Dojour user provided button text, or default button text
@@ -139,7 +141,8 @@ Variable | Description
 Option | Default | Description
 --- | --- | ---
 template | See Above | The template to use for the event list. Feel free to add HTML, see the table above for more reference.
-detail_template | See Above | The template for event detail page. 
+detail_template | See Above | The template for event detail page.
+distinct | true | Set to false to list each date of an event as seperate.
 page_size | 10 | The amount of events that should be fetched with each page (clicking the more button adds another page)
 loading_text |‘Loading...’ |The text that appears while the events are being fetched from https://dojour.us
 more_button_text | ‘More’ | The text of the button used to fetch more events
