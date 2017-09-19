@@ -145,6 +145,7 @@ template | See Above | The template to use for the event list. Feel free to add 
 detail_template | See Above | The template for event detail page.
 subcalendar_id | false | Set a subcalendar id to only show events from that subcalendar
 event_id | false | Only show dates for a single event
+exclude_event_id | false | Exclude an event from a list
 distinct | true | Set to false to list each date of an event as seperate.
 page_size | 10 | The amount of events that should be fetched with each page (clicking the more button adds another page)
 loading_text |‘Loading...’ |The text that appears while the events are being fetched from https://dojour.us
