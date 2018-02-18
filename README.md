@@ -129,14 +129,13 @@ Variable | Description
 {{year_abrv}} | The year abbreviated (ex 99)
 {{end_date}} | If range of dates, the number (1-31) representing the day of the month for last event date.
 {{end_day}} | If range of dates, the named day of the week (Sunday-Saturday)
-{{end_day_abrv}} | The day abbreviated to three characters (Sun-Sat)
-{{end_month}} | The named month (January-December)
-{{end_month_abrv}} | The month abbreviated to three characters (Jan-Dec)
-{{end_month_num}} | The month number (1-12)
-{{end_year}} | The year (ex 1999)
-{{end_year_abrv}} | The year abbreviated (ex 99)
+{{end_day_abrv}} | If range of dates, The day abbreviated to three characters (Sun-Sat)
+{{end_month}} | If range of dates and a different month than the start month, the named month (January-December)
+{{end_month_abrv}} | If range of dates and a different month than the start month, the month abbreviated to three characters (Jan-Dec)
+{{end_month_num}} | If range of dates and a different month than the start month, the month number (1-12)
+{{end_year}} | If range of dates and a different year than the start year, the year (ex 1999)
+{{end_year_abrv}} | If range of dates and a different year than the start year, the year abbreviated (ex 99)
 {{if ...}} | Use any of the keys above to conditionally add hide_class (see above). Use to add class or attributes to elements. EX: ```<button class=”{{if call_to_action_url}}”>{{call_to_action_text}}</button>```
-
 
 ### Additional Settings
 Option | Default | Description
